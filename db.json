@@ -1,6 +1,8 @@
 {
   "users": [
     { "id": 1, "name": "John Doe", "email": "john@test.com" },
-    { "id": 2, "name": "Mark Walberg", "email": "mark@test.com" }
+    { "id": 2, "name": "Mark Walberg", "email": "mark@test.com" },
+    { "id": 3, "name": "Sarah Connor", "email": "sarah@test.com" },
+    { "id": 4, "name": "Nikita Laundry", "email": "nikitas@test.com" }
   ]
 }
