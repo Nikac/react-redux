@@ -1,4 +1,4 @@
-/* @import url("../src/assets/fonts/metropolis/stylesheet.css"); */
+@import url("./assets/fonts/stylesheet.css");
 
 *,
 *::before,
@@ -24,8 +24,10 @@ body {
   height: 100%;
   overflow: auto;
   width: 100%;
-  /* font-family: "metropolislight"; */
+  font-size: 1.4rem;
+  font-family: "metropolislight";
 }
+
 #root {
   height: 100%;
 }

@@ -34,6 +34,8 @@ const theme = {
   },
   fonts: {
     bold: "bold",
+    metropolisbold: "metropolisbold",
+    metropolisregular: "metropolisregular",
   },
   breakpoints: {
     small: "576px",

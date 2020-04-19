@@ -1,5 +1,5 @@
 {
-  "name": "react-redux",
+  "name": "react-redux-pr",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,14 +12,17 @@
     "json-server": "^0.16.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
     "styled-components": "^5.1.0"
   },
   "scripts": {
-    "start": "concurrently \"env-cmd .env.development\" \"json-server --watch db.json\"  \"react-scripts start\" ",
-    "build": "env-cmd .env.production react-scripts build",
-    "test": "env-cmd .env.development react-scripts test",
+    "start": "concurrently \"env-cmd -f .env.development\" \"json-server --watch db.json\"  \"react-scripts start\" ",
+    "build": "env-cmd -f .env.production react-scripts build",
+    "test": "env-cmd -f .env.development react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
