@@ -5,4 +5,4 @@ const UserDetails = (props) => {
   return <StyledHeadingOne>User details</StyledHeadingOne>;
 };
 
-export default UserDetails;
+export default React.memo(UserDetails);

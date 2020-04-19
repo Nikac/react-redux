@@ -1,4 +1,11 @@
-import { GET_USERS, GET_ERROR, GET_USER } from "../actions/user.action";
+import {
+  GET_USERS,
+  GET_ERROR,
+  GET_USER,
+  CREATE_USER,
+  UPDATE_USER,
+  DELETE_USER,
+} from "../actions/user.action";
 
 const initialState = {
   users: [],
@@ -16,6 +23,25 @@ export default (state = initialState, action) => {
       return {
         ...state,
         users: state.users.find((u) => u.id === action.payload),
+      };
+    case CREATE_USER:
+      return {
+        ...state,
+        users: [...state.users, action.payload],
+      };
+    case UPDATE_USER:
+      const users = state.users.filter(
+        (u) => (u = u.id === action.payload.id ? action.payload : u)
+      );
+      return {
+        ...state,
+        users: users,
+      };
+    case DELETE_USER:
+      const deletedUser = state.users.filter((u) => u.id !== action.payload);
+      return {
+        ...state,
+        users: deletedUser,
       };
     case GET_ERROR:
       return { ...state, errorMsg: action.payload };
