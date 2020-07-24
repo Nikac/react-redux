@@ -5,6 +5,7 @@ const Home = (props) => {
     <>
       <h2>Change</h2>
       <h2>Change 2</h2>
+      <h2>Change 3</h2>
       <h1>Welcome to Home Page</h1>
     </>
   );
