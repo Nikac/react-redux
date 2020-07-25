@@ -9,6 +9,7 @@ const Home = (props) => {
       <h2>Change 4</h2>
       <h2>Change 5</h2>
       <h2>Change 6</h2>
+      <h2>Change 7</h2>
       <h1>Welcome to Home Page</h1>
     </>
   );
